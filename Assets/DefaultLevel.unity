@@ -278,7 +278,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 778167786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.155, y: 0.27, z: 0}
+  m_LocalPosition: {x: 0.01, y: -0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -296,16 +296,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 1907487964}
-  horizAcceleration: 20
-  horizDecceleration: 20
+  horizAcceleration: 30
+  horizDecceleration: 30
   airControlModifier: 0.5
   maxSpeed: 8
-  maxAirSpeed: 0
-  jumpSpeed: 10
-  gravityModifier: 1
+  jumpSpeed: 7
+  secondaryJumpSpeed: 7
   jumpCount: 2
-  velocitySnap: 0
-  velocitySnapTiming: 0
+  downSpeed: 5
   rigid: {fileID: 778167792}
 --- !u!54 &778167792
 Rigidbody:
