@@ -2,20 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * PlayerInput represents a virtual input layer for each player so that the character controllers don't need to couple to the editor-set input axes. 
+ * This allows us to use the same control code for each player, as well as emulate more advanced input controls like double taps in the future.
+ */
 public class PlayerInput : MonoBehaviour {
 
+    //This sets which player this captures the input for [Player indexes are 1 through 4]
     [SerializeField]
     private int playerIndex;
 
-    //Use the InputButton class for our buttons so that we don't have to repeat implementing functionality such as double press, long hold, etc. for all buttons.
+    // Instead of having to write a bunch of methods for each thing you can do with each button, It's easier to just let controller code access
+    // A virtual button for each button with our desired information stored in it.
     public InputButton fastAttackButton;
     public InputButton strongAttackButton;
     public InputButton jumpButton;
 
+    // The axes input methods in this class are just handled here instead of another class like InputButton, so we store their identifiers computed at awake here.
     private string horizontalAxisIdentifier;
     private string verticalAxisIdentifier;
 
-    //TODO: Use the Facade design pattern and make this class have UnityEvent objects for attack slots (like Up-Attack, Left-Attack, Right-Attack or other simultaneous presses)
+    //Possible TODO: Make the virtual input layer work as a push system using unity events so you can set things in the editor. Right now its a pull system that you interact with through code.
 
     private void Awake()
     {
