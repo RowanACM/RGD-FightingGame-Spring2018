@@ -26,9 +26,14 @@ public class PlayerInput : MonoBehaviour {
 
     private void Awake()
     {
-        fastAttackButton = new InputButton("P"+playerIndex+"-Fast");
-        strongAttackButton = new InputButton("P" + playerIndex + "-Strong");
-        jumpButton = new InputButton("P" + playerIndex + "-Jump");
+        //for now, a hack to get the controllers working on OS X and Windows at the same time (each OS maps button codes differently - sigh). 
+        // We manually configure different sets of input axes for each platform, and just change the name of the axis to include a suffix if on MacOS/OS X.
+        // Is this a good solution? NO. Is this a one-ish line solution that lets me show a prototype tomorrow? Yes. We'll need to replace this with one of many good solutions.
+        // Probably what we'll do is write a script that generates these input axes on the fly or in-editor. Should help with the duplicate P1-4 player prefixes to the axes :P
+        string platformSuffix = (Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.OSXPlayer) ? "-MacOS" : "";
+        fastAttackButton = new InputButton("P"+playerIndex+"-Fast" + platformSuffix);
+        strongAttackButton = new InputButton("P" + playerIndex + "-Strong" + platformSuffix);
+        jumpButton = new InputButton("P" + playerIndex + "-Jump" + platformSuffix);
         horizontalAxisIdentifier = "P" + playerIndex + "-Horizontal";
         verticalAxisIdentifier = "P" + playerIndex + "-Vertical";
     }
