@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2485eff997749d5815e93607be11c3, type: 3}
+  m_Name: MyBindings
+  m_EditorClassIdentifier: 
+  bindings:
+  - name: Horizontal
+    descriptiveName: Horizontal Movement Axis
+    descriptiveNegativeName: 
+    isAxis: 1
+    keyboardPositive:
+    - d
+    - right
+    - 
+    - 
+    keyboardNegative:
+    - a
+    - left
+    - 
+    - 
+    windowsJoystickAxis: 0
+    macOSJoystickAxis: 0
+    isButton: 0
+    keyboardButton:
+    - 
+    - 
+    windowsJoystickButton: 
+    macOSJoystickButton: 
+    gravity: 0
+    dead: 0
+    sensitivity: 0
+    snap: 0
+    invert: 0
+  - name: Vertical
+    descriptiveName: Vertical Movement Axis
+    descriptiveNegativeName: 
+    isAxis: 1
+    keyboardPositive:
+    - w
+    - 
+    - 
+    - 
+    keyboardNegative:
+    - s
+    - 
+    - 
+    - 
+    windowsJoystickAxis: 1
+    macOSJoystickAxis: 1
+    isButton: 0
+    keyboardButton:
+    - u
+    windowsJoystickButton: 
+    macOSJoystickButton: 
+    gravity: 0
+    dead: 0
+    sensitivity: 0
+    snap: 0
+    invert: 0
+  - name: Jump
+    descriptiveName: Jump button
+    descriptiveNegativeName: 
+    isAxis: 0
+    keyboardPositive:
+    - 
+    - 
+    keyboardNegative:
+    - 
+    - 
+    windowsJoystickAxis: 0
+    macOSJoystickAxis: 0
+    isButton: 1
+    keyboardButton:
+    - space
+    - 
+    - 
+    - 
+    windowsJoystickButton: 0
+    macOSJoystickButton: 16
+    gravity: 0
+    dead: 0
+    sensitivity: 0
+    snap: 0
+    invert: 0
+  - name: Attack1
+    descriptiveName: Attack 1 button
+    descriptiveNegativeName: 
+    isAxis: 0
+    keyboardPositive:
+    - 
+    - 
+    keyboardNegative:
+    - 
+    - 
+    windowsJoystickAxis: 0
+    macOSJoystickAxis: 0
+    isButton: 1
+    keyboardButton:
+    - j
+    - 
+    - 
+    - 
+    windowsJoystickButton: 1
+    macOSJoystickButton: 17
+    gravity: 0
+    dead: 0
+    sensitivity: 0
+    snap: 0
+    invert: 0
+  - name: Attack2
+    descriptiveName: Attack 2 button
+    descriptiveNegativeName: 
+    isAxis: 0
+    keyboardPositive:
+    - 
+    - 
+    keyboardNegative:
+    - 
+    - 
+    windowsJoystickAxis: 0
+    macOSJoystickAxis: 0
+    isButton: 1
+    keyboardButton:
+    - k
+    - 
+    - 
+    - 
+    windowsJoystickButton: 2
+    macOSJoystickButton: 18
+    gravity: 0
+    dead: 0
+    sensitivity: 0
+    snap: 0
+    invert: 0
+  - name: Block
+    descriptiveName: Block attacks
+    descriptiveNegativeName: 
+    isAxis: 0
+    keyboardPositive:
+    - 
+    - 
+    keyboardNegative:
+    - 
+    - 
+    windowsJoystickAxis: 0
+    macOSJoystickAxis: 0
+    isButton: 1
+    keyboardButton:
+    - l
+    - 
+    - 
+    - 
+    windowsJoystickButton: 3
+    macOSJoystickButton: 19
+    gravity: 0
+    dead: 0
+    sensitivity: 0
+    snap: 0
+    invert: 0
+  - name: Submit
+    descriptiveName: Submit button
+    descriptiveNegativeName: 
+    isAxis: 0
+    keyboardPositive: []
+    keyboardNegative: []
+    windowsJoystickAxis: 0
+    macOSJoystickAxis: 0
+    isButton: 1
+    keyboardButton:
+    - enter
+    - 
+    - 
+    - 
+    windowsJoystickButton: 1
+    macOSJoystickButton: 17
+    gravity: 0
+    dead: 0
+    sensitivity: 0
+    snap: 0
+    invert: 0
+  - name: Back
+    descriptiveName: Back button
+    descriptiveNegativeName: 
+    isAxis: 0
+    keyboardPositive: []
+    keyboardNegative: []
+    windowsJoystickAxis: 0
+    macOSJoystickAxis: 0
+    isButton: 1
+    keyboardButton:
+    - delete
+    - 
+    - 
+    - 
+    windowsJoystickButton: 3
+    macOSJoystickButton: 19
+    gravity: 0
+    dead: 0
+    sensitivity: 0
+    snap: 0
+    invert: 0
+  keyboardControllers: 1
+  joystickControllers: 3
+  buttonGravity: 3
+  joystickDeadzone: 0.01
+  buttonSensitivity: 3
+  keyboardAxisSnap: 1

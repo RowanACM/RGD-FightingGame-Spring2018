@@ -9,7 +9,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour {
 
     // Virtual Input layer for the player this character represents
-    public PlayerInput input;
+    public ControllerInput input;
 
     // How quickly does this character get up to speed when running or air controlling
     public float horizAcceleration;
