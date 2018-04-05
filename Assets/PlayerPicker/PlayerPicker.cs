@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerPicker : MonoBehaviour {
 
@@ -24,7 +25,7 @@ public class PlayerPicker : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             getplayer = Playerlist[num];
-            Application.LoadLevel("DefaultLevel");
+            SceneManager.LoadScene("DefaultLevel");
         }
     }
    public GameObject GPlayer()
