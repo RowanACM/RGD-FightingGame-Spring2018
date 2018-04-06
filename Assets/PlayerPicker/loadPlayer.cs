@@ -11,10 +11,11 @@ public class loadPlayer : MonoBehaviour {
         Playerlist[num2].transform.localPosition = new Vector3(0.1f, -0.51f, 0);
         for(int i = 0; i < 8; i++)
         {
-            if(i != num2)
-            {
-                Destroy(Playerlist[i]);
-            }
+			if (i != num2) {
+				Destroy (Playerlist [i]);
+			} else {
+				FindObjectOfType<DamageDisplay> ().damages [0] = Playerlist [i].GetComponent<Damage> ();
+			}
         }
 	}
 	
