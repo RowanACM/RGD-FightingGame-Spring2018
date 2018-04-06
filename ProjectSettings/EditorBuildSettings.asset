@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Main menu.unity
+    path: Assets/mainmenu/Main menu.unity
     guid: ec3184e6fc817d4408197daa28f47368
   - enabled: 1
     path: Assets/DefaultLevel.unity
     guid: ce5e97bf03afb4847992bdaab3b2e0e2
   - enabled: 1
-    path: Assets/PlayerPicker.unity
+    path: Assets/PlayerPicker/PlayerPicker.unity
     guid: 21eff93617704c843853e7b4be94d411
